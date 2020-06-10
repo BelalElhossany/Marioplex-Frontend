@@ -1,13 +1,9 @@
 version: '3'
 services:
-  nginx:
+  frontend:
     restart: always
     build:
       dockerfile: Dockerfile.dev
-      context: ./nginx
+      context: ./
     ports:
       - '80:80'
-  front:
-    build:
-      dockerfile: Dockerfile.dev
-      context: ./
