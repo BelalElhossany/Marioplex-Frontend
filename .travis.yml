@@ -22,7 +22,7 @@ deploy:
   region: us-east-1
   app: mariofront
   env: Mariofront-env
-  bucket_name: frontfront
+  bucket_name: multifront
   bucket_path: front
   on:
     branch: master
