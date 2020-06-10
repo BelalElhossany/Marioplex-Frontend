@@ -2,16 +2,9 @@
   "AWSEBDockerrunVersion": 2,
   "containerDefinitions": [
     {
-      "name": "front",
-      "image": "belalelhossany/multi-front",
-      "hostname": "client",
-      "essential": false,
-      "memory": 128
-    },
-    {
-      "name": "nginx",
-      "image": "belalelhossany/multi-nginx",
-      "hostname": "nginx",
+      "name": "frontend",
+      "image": "belalelhossany/frontend",
+      "hostname": "frontend",
       "essential": true,
       "portMappings": [
         {
@@ -19,7 +12,6 @@
           "containerPort": 80
         }
       ],
-      "links": ["front"],
       "memory": 128
     }
   ]
